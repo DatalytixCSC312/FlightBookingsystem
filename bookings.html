@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styleBooking.css">
+  <title>Cloud Form</title>
+</head>
+
+<body>
+
+  <h3>Booking Details</h3>
+
+  <div>
+    <form id="clearFrom">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="idnumber">ID Number</label>
+      <input type="text" id="idnumber" name="ID Number" >
+
+
+    <label for="country">From</label>
+    <select id="depature" name="country">
+            <option value="Cape Town">Cape Town</option>
+            <option value="Joburg">OR Tambo International Airport</option>
+            <option value="Durban">Ushaka Airport</option>
+    </select>
+    <label for="country">To</label>
+    <select id="arrival" name="country">
+      <option value="Cape Town">Cape Town</option>
+      <option value="Joburg">OR Tambo International Airport</option>
+      <option value="Durban">Ushaka Airport</option>
+     </select>
+     <label for="country">Date Depature</label>
+      <fieldset>
+          <input name="deparure" type="date" class="form-control date" id="deparureDate" placeholder="Select date..." required="">
+      </fieldset>
+  
+      <button type="submit" id="submit">Book Flight</button>
+    </form>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="server.js"></script>
+</body>
+
+</html>
